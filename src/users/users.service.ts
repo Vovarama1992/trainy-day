@@ -39,7 +39,7 @@ export class UsersService {
 
     try {
       const decoded = this.jwtService.verify(token, { secret });
-      const userId = decoded.sub;
+      const userId = decoded.id;
       return this.getUserById(userId);
     } catch (error) {
       throw new HttpException('Invalid token', HttpStatus.UNAUTHORIZED);
