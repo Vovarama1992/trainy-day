@@ -1,5 +1,7 @@
 Через Swagger заголовки могут не добавляться. попробуйте через Postman
 
+Мои контакты https://t.me/volodzya13
+
 # Trainy Day Backend
 
 
@@ -74,3 +76,4 @@ Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjk3MzcxMjAwLCJl
 
 Bearer <your_refresh_token>
 В ответе вы получите новый accessToken, который нужно снова добавить в Swagger.
+
