@@ -28,8 +28,7 @@ export class UsersService {
     return { name: user.name, email: user.email, id: user.id };
   }
 
-  async getUserFromToken(authHeader: string) {
-    const token = authHeader.split(' ')[1];
+  async getUserFromToken(token: string) {
     if (!token) {
       throw new HttpException('Token missing', HttpStatus.UNAUTHORIZED);
     }
